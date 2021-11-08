@@ -1,0 +1,7 @@
+
+spring:
+  es:
+    host: ${ES_HOST}
+    port: ${ES_PORT}
+    username: ${ES_USER} 
+    password: ${ES_PASSWORD}

@@ -1,0 +1,63 @@
+curl -u elastic:elastic_search_moqc -X POST "localhost:9200/_bulk" -H 'Content-Type: application/json' -d'
+{ "create": {"_index": "common_name"} }
+{"name":"Ben","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Jonas","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Leon","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Elias","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Fynn","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Noah","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Paul","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Louis","score":"0","country_code":"DE"}
+{ "create": {"_index": "common_name"} }
+{"name":"Leonardo","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Francesco","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Alessandro","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Lorenzo","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Mattia","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Andrea","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Gabriele","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Riccardo","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Tommaso","score":"0","country_code":"IT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Roberts","score":"0","country_code":"LV"}
+{ "create": {"_index": "common_name"} }
+{"name":"Markuss","score":"0","country_code":"LV"}
+{ "create": {"_index": "common_name"} }
+{"name":"Artjoms","score":"0","country_code":"LV"}
+{ "create": {"_index": "common_name"} }
+{"name":"Lukas","score":"0","country_code":"AT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Jonas","score":"0","country_code":"AT"}
+{ "create": {"_index": "common_name"} }
+{"name":"Tobias","score":"0","country_code":"AT"}
+{ "create": {"_index": "common_name"} }
+{"name":"陽葵","score":"0","country_code":"JP"}
+{ "create": {"_index": "common_name"} }
+{"name":"依","score":"0","country_code":"JP"}
+{ "create": {"_index": "common_name"} }
+{"name":"菜","score":"0","country_code":"JP"}
+{ "create": {"_index": "common_name"} }
+{"name":"Nguyễn","score":"0","country_code":"VN"}
+{ "create": {"_index": "common_name"} }
+{"name":"Trần","score":"0","country_code":"VN"}
+{ "create": {"_index": "common_name"} }
+{"name":"Vũ","score":"0","country_code":"VN"}
+'
+
+curl -u admin:password -I "http://localhost:8080/"
+curl --header "X-Auth-Token:9b7aae49-f112-4aa2-afa5-5b3a623c3bb5"   "http://localhost:8080/country_guess?name=%E8%8F%9C"
